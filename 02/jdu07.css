@@ -1,0 +1,341 @@
+* {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* end of reset css */
+:root {
+    --top-blue: #4760bc;
+    --main-blue: #5179b3;
+    --green-color: #7eb663;
+    --white-refregeratory: #f0f1f3;
+    --white-color: #fff;
+    --title-color: #783605;
+    --black-color: #303030;
+    --border-color: #3a4750;
+}
+
+.top {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    font-size: 1.4rem;
+    background-color: var(--top-blue);
+    mix-blend-mode: overlay;
+    color: var(--white-color);
+}
+
+/* end of top-of-menu */
+.menu {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 36px;
+    font-size: 1.33rem;
+    font-weight: 400;
+    background-color: var(--white-color);
+}
+
+.top i {
+    opacity: 0.5;
+}
+
+.menu img{
+    margin-right: 140px;
+}
+
+/* end of menu */
+.slider img {
+    width: 100%;
+    height: 100%;
+    /* margin-bottom: 50px; */
+}
+
+/* end of slider */
+.notifications{
+    padding-top: 50px;
+    /* margin-bottom: 100px; */
+    padding-bottom: 50px;
+    background-color:var(--white-refregeratory);
+}
+.container{
+    width: 76%;
+    height: auto;
+    display: grid;
+    margin: auto;
+    grid-template-areas: 
+    'news info'
+    'news-card info-card'
+    'news-card info-card'
+    /* 'news__card info__card'
+    'news__card info__card'
+    'news__card info__card' */
+    ;
+    align-items: flex-start;
+    row-gap: 18px;
+    column-gap: 30px;
+    background-color: var(--white-refregeratory);
+}
+
+.news{
+    grid-area: news;
+    /* align-self: flex-end; */
+    font-size: 1.9rem;
+    /* color: blue; */
+    font-weight: 400px;
+}
+
+.info{
+    grid-area: info;
+    /* align-self: flex-end; */
+    font-size: 1.8rem;
+    font-weight: 400px;
+}
+
+.news-card{
+    grid-area: news-card;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid var(--white-refregeratory);
+    background-color: var(--white-color);
+}
+.container h2{
+    font-size: 1.1rem;
+    font-weight: 200px;
+    color: var(--main-blue);
+    align-self: center;
+    margin-bottom: 3rem;
+}
+.container h5{
+    color: var(--title-color);
+    font-size: 1.22rem;
+    font-weight: 600;
+}
+.container p{
+    font-size: 1.05rem;
+    /* font-weight: 100px; */
+}
+.news-card__box{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+    padding: 9px;
+    border: 1.5px solid var(--white-refregeratory);
+    border-radius: 10px;
+}
+.news-card__box__img {
+    /* padding: 4px; */
+    /* border-radius: 5px; */
+}
+.news-card__box__img img{
+    width: 80px;
+    height: 80px;
+    padding: 4px;
+    outline: none;
+    border: 1.5px solid var(--white-refregeratory);
+    border-radius: 5px;    
+}
+.info-card__box__img {
+    /* overflow: auto; */
+    /* padding: 4px; */
+    border-radius: 5px;
+}
+
+.info-card__box__img img{
+    width: 80px;
+    height: 80px;
+    padding: 4px;
+    outline: none;
+    border: 1px solid var(--white-refregeratory);
+    border-radius: 5px;    
+}
+
+.news-card__box__desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 4px;
+    margin-right: 10px;
+}
+.info-card__box__desc{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+
+.info-card{
+    grid-area: info-card;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    /* overflow: hidden; */
+    border: 5px solid var(--white-refregeratory);
+    border-radius: 12px;
+    background-color: var(--white-color);
+}
+.info-card__box{
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    border: 1.5px solid var(--white-refregeratory);
+    border-radius: 10px;
+}
+
+.btn{
+    align-self: center;
+    margin: 40px;
+    padding: 12px 24px;
+    /* width: 160px;
+    height: 45px; */
+    font-size: 1rem;
+    /* font-weight: bold; */
+    border: none;
+    border-radius: 3px;
+    color: var(--white-color);
+    background-color: var(--main-blue);
+}
+
+/* end of notifications */
+
+.courses{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    row-gap: 10px;
+}
+
+.courses h1{
+    font-size: 2.6rem;
+    font-weight: 100;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.courses h3{
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-bottom: 60px;
+    /* gap: 50px; */
+}
+
+.courses__items{
+    display: flex;
+    flex-direction: row;
+    width: 76%;
+    justify-content: space-between;
+    /* column-gap: 30px; */
+}
+
+.course__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:var(--white-refregeratory);
+}
+
+.course__card h2{
+    padding: 8px ;
+    margin-bottom: 1px;
+    font-weight: 100;
+}
+
+.course__card img{
+    width: 250px;
+    height: 200px;
+    background-color: var(--white-color);
+    padding: 5px;
+    border-radius: 2px;
+    border: 2px solid var(--white-refregeratory);
+}
+
+.btn--green{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    padding: 10px;
+    font-size: 0.9rem;
+    background-color: var(--green-color);
+}
+
+.btn i{
+    font-size: 0.95rem;
+    color: var(--white-color);
+    mix-blend-mode: normal
+}
+
+/* end of courses */
+
+footer{
+    width: 100%;
+    height: 33vh;
+    background-color:var(--black-color);
+}
+
+.nemad-electronic{
+    margin-top: 40px;
+    text-align: center;
+    /* margin-right: 50%;
+    margin-left: 50%; */
+    /* display: block; */
+    /* margin: auto; */
+    /* width: 100%; */
+}
+
+.nemad-electronic img{
+    width: 78px;
+    height: 84px;
+    /* margin: auto; */
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 76%;
+    color: var(--white-color);
+    /* overflow: hidden; */
+}
+
+.footer :nth-child(1){
+    font-size: 0.86rem;
+    font-weight: 100;
+}
+
+.footer :nth-child(2){
+    color:var(--top-blue);
+}
+
+.footer svg{
+    width: 10px;
+    height: 10px;
+    fill:var(--top-blue);
+    /* color: var(--main-blue); */
+    /* background-color: #fff;/ */
+}
+
+/* .footer:nth-child(2)::before{
+    content: url('images/analysis.png');
+} */
+
+
+/* end of footer */

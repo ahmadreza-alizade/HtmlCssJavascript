@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <title>hero section</title>
+  </head>
+  <body>
+    
+    <section class="hero-section">
+      <!-- <picture>
+        <source alt="header__image" srcset="../assets/images/banner-mobile.jpg" media="(max-width:768px)">
+        <source alt="header__image" srcset="../assets/images/banner.jpg" media="(min-width:769px)">
+      </picture>   -->
+      <picture class="hero__background">
+        <source
+          media="(max-width:768px)"
+          srcset="../assets/images/banner-mobile.jpg"
+        />
+        <source
+          media="(min-width:768px)"
+          srcset="../assets/images/banner.jpg"
+        />
+        <!-- <source media="(min-width:465px)" srcset="img_white_flower.jpg"> -->
+        <img
+          src="../assets/images/banner.jpg"
+          alt="Flowers"
+        />
+      </picture>
+
+      <div class="hero__wrapper container">
+        <div class="intro">
+          <h2 class="hero__title">تپسی</h2>
+          <h3 class="hero__desc">
+            اپلیکیشن درخواست خودرو و پیک
+          </h3>
+          <div class="intro__btn">
+            <button class="hero__btn btn btn--primary">
+              دانلود اپلیکیشن مسافران
+            </button>
+            <button class="hero__btn btn btn--primary">
+              دانلود اپلیکیشن مسافران
+            </button>
+            <button class="hero__btn btn btn--primary">
+              دانلود اپلیکیشن مسافران
+            </button>
+            <button class="hero__btn btn btn--primary">
+              دانلود اپلیکیشن مسافران
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

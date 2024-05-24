@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    /* width: 100%; */
+    /* height: 100%; */
+    direction: rtl;
+    box-sizing: border-box;
+    background-color: #f0f4f7;
+}
+
+.canvas {
+    width: 35%;
+    height: 75%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 1%;
+    background-color: #fff;
+}
+
+.container {
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    padding: 8%;
+    background-color: #fff;
+}
+
+.form-name {
+    font-size: 32px;
+    /* margin-bottom: 8%; */
+    /* word-spacing: 42px; */
+}
+
+/* end of form name */
+
+/* the form consis of 2 part==> part1: inputs */
+.form {
+    /* width: 100%; */
+}
+
+.field {
+    /* width: 100%; */
+    /* margin-bottom: 5%; */
+    margin-top: 5%;
+}
+
+.field>input {
+    width: 100%;
+    height: 12%;
+    font-size: 1.4rem;
+    padding: 10px 10px;
+    border-radius: 6px;
+    opacity: 0.4;
+    /*opacity is for placeholder && the whole input*/
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    /* just for color of border with opacity border && customize border*/
+}
+
+.field>input:focus {
+    opacity: 2;
+    /*opacity is for placeholder && the whole input*/
+    outline: none;
+    border: 1px solid rgba(1, 188, 239, 0.5);
+    /* just for color of border with opacity border && customize border*/
+}
+
+.flex-sb {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+input[type='checkbox'] {
+    /* width: 1rem;
+    height: 1rem; */
+    /* display: inline-block; */
+    transform: scale(2);
+    cursor: pointer;
+    margin-left: 1rem;
+    margin-right: 0.3rem;
+}
+
+.flex-sb>a {
+    text-decoration: none;
+    color: rgb(1, 188, 239);
+    /* opacity: 0.6; */
+}
+
+button {
+    width: 100%;
+    height: 12%;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(1, 188, 239);
+    border: none;
+    border-radius: 5px;
+}
+
+.field>a {
+    text-decoration: none;
+    color: rgb(1, 188, 239);
+}
+
+/* end of part1==> inputs */
+/* start of part2==> logos */
+
+.socialaccount>p {
+    text-align: center;
+    margin-top: 4%;
+    word-spacing: 0.2rem;
+}
+
+.accounts {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    /* width: 33%; */
+    cursor: pointer;
+}
+
+.logo>a {
+    padding: 25px 45px 5px 45px;
+    border-radius: 4px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    /* width: 100%; */
+    /* height: fit-content; */
+}
+
+.logo>a:hover {
+    border: 2px solid rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+
+img {
+    /* transform: scale(0.05); */
+    width: 35px;
+    height: 35px;
+}
+
+/* end of part2==>  */
